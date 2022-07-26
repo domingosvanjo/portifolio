@@ -7,6 +7,7 @@
 
     <!-- Folha de estilo de CSS Linkado -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,9 +43,8 @@
             <img class="title__profile" src="assets\profile.png">
             <div class="title__container" id="#sobremim">
                 <h2 class="title__bio">Olá, meu nome é Domingos Vanjo e construo páginas web.</h2>
-                <h3 class="title__subsection">Eu sou formado em Letras Portugês-Inglês pela UEMA-MA. Atualmente estudo Análise e desenvolvimento de sistemas na PUC-GO e também estou participando do projeto Oracle ONE na Alura.</h3>
+                <h3 class="title__subsection">Eu sou brasileiro, tenho 44 anos, formado em Letras Portugês-Inglês pela UEMA-MA. Atualmente estudo Análise e desenvolvimento de sistemas na PUC-GO e também estou participando do projeto Oracle ONE na Alura.</h3>
                 <ul class="title__network">
-                    <!-- Ponha os links de suas redes sociais favoritas -->
                     <li class="title__network__item"><a href="https://github.com/domingosvanjo">Github <img src="assets\arrow.png"> </a></li>
                     <li class="title__network__item"><a href="https://www.linkedin.com/in/domingosvanjo/">Linkedin <img src="assets\arrow.png"></a></li>
                     <li class="title__network__item"><a href="https://www.instagram.com/domingosvanjo/">Instagram <img src="assets\arrow.png"></a></li>
@@ -86,21 +86,21 @@
                 <div class="skills__box">
                     <ul>
                         <li class="skills__img"> <img src="assets\php_icon.png" alt=""></li>
-                        <li class="skills__name">PHP</li>
+                        <li class="skills__name">PHP (projeto futuro)</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
                         <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                        <li class="skills__name">Node JS</li>
+                        <li class="skills__name">Node JS (projeto futuro)</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
                         <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
+                        <li class="skills__name">React (projeto futuro)</li>
                     </ul>
                 </div>
 
@@ -120,14 +120,7 @@
                 <div class="hobbies__box">
                     <ul>
                         <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
-                        <li class="hobbies__name"> Andar de skate</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                        <li class="hobbies__name">Tocar baixo</li>
+                        <li class="hobbies__name"> Fazer caminhadas</li>
                     </ul>
                 </div>
 
@@ -151,13 +144,6 @@
                         <li class="hobbies__name">Cozinhar</li>
                     </ul>
                 </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Tirar fotos</li>
-                    </ul>
-                </div>
         </div>
     </section>
 
@@ -167,7 +153,6 @@
         <div class="academic__courses">
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
                     <li class="academic__courses__item__img"><img id="img1" src="assets/logo_UEMA.png"></li>
                     <li class="academic__courses__item__title"><h4>Letras</h4></li>
                     <li class="academic__courses__item__subtitle"><p>2004 - UEMA</p></li>
@@ -175,7 +160,13 @@
             </div>
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
+                    <li class="academic__courses__item__img"><img id="img3" src="assets/SEBRAE.webp"></li>
+                    <li class="academic__courses__item__title"><h4>Análise e planej. financeiro</h4></li>
+                    <li class="academic__courses__item__subtitle"><p>2007 - SEBRAE-MA</p></li>
+                </ul>
+            </div>
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
                     <li class="academic__courses__item__img"><img id="img2" src="assets/alura.png"></li>
                     <li class="academic__courses__item__title"><h4>Projeto ONE</h4></li>
                     <li class="academic__courses__item__subtitle"><p>2022 - Alura</p></li>
@@ -183,7 +174,6 @@
             </div>
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
                     <li class="academic__courses__item__img"><img id="img3" src="assets/puc-goias.svg"></li>
                     <li class="academic__courses__item__title"><h4>Análise de dados</h4></li>
                     <li class="academic__courses__item__subtitle"><p>Em andamento - PUC-GO</p></li>
@@ -209,13 +199,11 @@
         </div>  
 
         <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
             <img class="experience__img" id="ex-forca" src="assets/forca1.PNG">
             <div class="experience__info" id="forca__info">
                 <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                             <span class="experience__repo"><a href="https://github.com/domingosvanjo/JogoDaForca.git"><button class="experiencia__botao--repo">Repositório</button></a></span>
                             <span class="experience__demo"><a href="https://domingosvanjo.github.io/jogodaforca/"><button class="experiencia__botao--demo">Ver demo</button></a></span>
                     </div>
@@ -259,13 +247,16 @@
                 <div class="formcontato__text">
                     <h2 class="formcontato__title">Contato</h2>
                     <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                    <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
-                    <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                        <button class="formcontato__botao">Enviar mensagem</button>
+                    <h3 class="formcontato__subtext">Preencha o formulário abaixo e entrarei em contato o mais rápido possível. </h3>
+                    <form class="formcontato__form" name="portifolio" target="_blank" action="domingosvanjo@gmail.com" method="post" enctype=" application/x-www-form-urlencoded">
+                        <ul id="formcontato__validate" class="invisivel">
+                        </ul>
+                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" required="">
+                        <input class="formcontato__input" type="email" id="email" placeholder="E-mail" required="">
+                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required="">
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required=""></textarea>
+                        <button type="submit" class="formcontato__botao">Enviar mensagem</button>
+                        
                     </form>
                 </div>
             </div>

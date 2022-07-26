@@ -1,0 +1,73 @@
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+
+    /* Menu */
+    section.menu{
+        width: 80%
+    }
+
+    .menu__list__item:nth-child(1){
+        display: none;
+      }
+      .menu__list__item:nth-child(2){
+          display: none;
+      }
+      .menu__list__item:nth-child(3){
+          display: none;
+      }
+      .menu__list__item:nth-child(4){
+          display: none;
+      }
+      .menu__list__item:nth-child(5){
+          display: none;
+      }
+      .menu__list__item:nth-child(6){
+        position:absolute;
+        margin-left: 60%;
+      }
+    }
+    /*title*/
+    section.title{
+        width: 80%
+    }
+
+    section.about{
+       
+
+    }
+    /*Skills*/
+    
+    /*Hobbies*/
+    
+    /*Experiências acadêmicas*/
+    
+    /*Expeirência profissional*/
+    
+    
+    
+    /*Mobile*/
+    @media (min-width: 425px) {
+    
+    /*Menu*/
+    
+    /*Titulo*/
+    
+    /*Sessão sobre*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+     
+    /*Formação Acadêmica*/
+    
+    /*Experiência Profissional*/
+    
+     /*Contato*/
+    
+    /*Footer*/
+    
+    }
+    
