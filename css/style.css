@@ -85,7 +85,7 @@ header img{
 }
 
 .menu__title{
-    width: 180px;
+    width: 150px;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -93,12 +93,12 @@ header img{
 
 nav{
     display: flex;
-    width: 1136px;
+    width: 925px;
+    justify-content: flex-end;
 }
 
 .menu__list{
     display: flex;
-    justify-content: space-between;
 }
 
 .menu__list__item{
@@ -109,6 +109,9 @@ nav{
     color: darkorange;
 }
 
+.menu__list__item:nth-child(6){
+    font-weight: bold;
+}
 
 /*Sessão Title*/
 
@@ -118,18 +121,18 @@ section.title{
     margin: 0;
     margin: 0 auto;
     width: 1136px;
+    margin-bottom: 2rem;
 }
 
 .title__div{
-    width: 1136px;
+    width: auto;
 }
 
 .title__profile{
-    width: 18em;
-    height: 18em;
+    width: 27%;
+    height: 100%;
     border-radius: 50%;
     float: right;
-    margin: 0 20px 20px 0;
 }
 
 .title__profile:hover{
@@ -137,7 +140,7 @@ section.title{
 }
 
 .title__container{
-    width: 968px;
+    width: auto;
 }
 
 .title__container h2{
@@ -146,12 +149,12 @@ section.title{
 
 .title__subsection{
     width: 751px;
-    height: 52px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+    text-align: justify;
 }
 
 .title__network{
@@ -160,7 +163,7 @@ section.title{
     padding: 0%;
     width: 540px;
     height: 24px;
-    padding-top: 3rem;
+    padding-top: 10px;
 }
 
 .title__network__item{
@@ -176,12 +179,10 @@ section.about{
     margin: 0 auto;
     background: #EAF2FD;
     flex-direction: column;
-    
     padding: 64px;
     gap: 10px;
-
     width: 100%;
-    height: 298px;
+    height: auto;
     align-self: stretch;
     flex-grow: 0;
 }
@@ -200,58 +201,60 @@ section.about{
 
 .about__paragraph{
     width: 751px;
-    height: 66.5px;
+    height: auto;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
     flex: none;
     order: 1;
     flex-grow: 0;
+    text-align: justify;
 }
 
 /*Sessão Skills*/
 
-section.skills{
+section.skills, section.hobbies{
     display: flex;
     float: none;
-    
     margin: 0;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    
-
-    width: 1136px;
-    height: 244px;
-    margin-bottom: 6rem;
+    width: auto;
+    height: auto;
+    margin-bottom: 2rem;
 }
 
-.skills__title{
+.skills__title, .hobbies__title{
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
 }
 
-.skills__line{
+.skills__line, .hobbies__line{
     display: flex;
     flex-direction: row;
-    flex: none;
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
+    width: auto;
+    height: 174px;
+    flex: none;
+    order: 1;
+    align-self: auto;
+    flex-grow: 0;
 }
 
-.skills__box{
+.skills__box, .hobbies__box{
     background: #FFFFFF;
     display: flex;
     flex: none;
     flex-direction: column;
     justify-content: flex-end;
-    align-items:flex-start;
+    align-items: flex-start;
     padding: 16px;
     gap: 8px;
-
     width: 146px;
     height: 151px;
 }
@@ -265,49 +268,7 @@ section.skills{
 }
 
 /*Sessão Hobbies*/
-section.hobbies{
-  
-    float: none;
-    margin: 0 auto;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    align-items: center;
-    
-    padding: 0px;
-    width: 100%;
-    height: 244px;
-    margin-bottom: 7rem;
-}
 
-.hobbies__title{
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-}
-
-.hobbies__line{
-    display: flex;
-    flex-direction: row;
-    flex: none;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-}
-
-.hobbies__box{
-    background: #FFFFFF;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 16px;
-    gap: 8px;
-
-    width: 146px;
-    height: 151px;
-}
 
 .hobbies__box:hover{
     transform: scale(1.1);
@@ -318,20 +279,17 @@ section.hobbies{
 }
 
 /* Experiência Acadêmica*/
-
 section.academic{
     display: flex;
- 
     float: none;
     margin: 0;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
-    padding-top: 82px;
-    padding-bottom: 82px;
- 
-    width: 108%;
-    height: 581px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: auto;
+    height: auto;
     background: #EAF2FD;
     flex: none;
     align-self: stretch;
@@ -351,7 +309,6 @@ section.academic{
     padding: 0px;
     gap: 16px;
     flex: none;
-
 }
 
 .academic__courses__box ul{
@@ -366,44 +323,42 @@ section.academic{
     align-items: center;
     padding: 16px;
     gap: 10px;
-    
-    width: 279px;
-    height: 275px;
+    width: 242px;
+    height: 242px;
 }
 .academic__courses__item__img:hover{
     transform: scale(1.1);
 }
 
 #img1{
-    width: 15rem;
-    height: 16rem;
+    width: 95%;
+    height: 95%;
 }
 
 #img2{
-    width: 18rem;
-    height: 9rem;
+    width: 100%;
+    height: 48%;
 }
 
-#img3{
-    width: 18rem;
-    height: 13rem;
+#img3, #img4{
+    width: 103%;
+    height: 86%;
 }
 
 .academic__courses__item__title{
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.3em;
     line-height: 26px;
 }
 
 .academic__courses__item__subtitle{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 19px;
     color: #464646
 }
   
 /* experiência*/
-
 section.experience{
     display: flex;
     float: none;
@@ -412,20 +367,17 @@ section.experience{
     align-items: center;
     padding: 0px;
     gap: 32px;
-
     width: 1136px;
-    height: 970px;
+    height: auto;
     flex: none;
 }
 
 .experience__section__title{
-    width: 364px;
-    height: 38px;
-
+    width: auto;
+    /* height: 38px; */
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-
     text-align: center;
 }
 
@@ -436,21 +388,19 @@ section.experience{
     align-items: center;
     padding: 0px;
     gap: 16px;
-
-    width: 1136px;
-    height: 406px;
-   
+    width: auto;
+    height: auto;
 }
+
 
 .experience__img{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     padding: 10px;
     gap: 10px;
-
-    width: 35rem;
-    height: 26rem;
+    width: 42rem;
+    height: 48%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 0px;
 }
@@ -462,17 +412,18 @@ section.experience{
 
 #forca__info{
    padding: 10px;
-    float: left;
+   margin: 0 4% 0 -94%;
 }
 
-#ex-forca{
-   position: absolute;
-   margin-left: 30%;
+#img__forca{
+  height: auto;
+  margin-left: 34%;
+  
 }
 
 .experience__title{
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.2rem;
     line-height: 26px;
     color: #464646;
     width: 448px;
@@ -483,7 +434,7 @@ section.experience{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    width: 348px;
+    /* width: 348px; */
     height: 19px;
     color: #464646;
 }
@@ -494,15 +445,12 @@ section.experience{
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
-
-    width: 560px;
+    /* width: 560px; */
     height: 51px;
 }
 
 .experiencia__botao--repo{
     box-sizing: border-box;
-
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -549,17 +497,14 @@ section.formcontato{
     display: flex;
     float: none;
     flex: none;
-    margin: 0;
     flex-direction: column;
     align-items: center;
     padding: 64px;
     gap: 10px;
-  
     order: 0;
     flex-grow: 0;
-    
-    width: 172%;
-    height: 788px;
+    width: auto;
+    height: auto;
     
     /* Azul/10% */
     background: #EAF2FD;
@@ -571,8 +516,7 @@ section.formcontato{
     align-items: center;
     padding: 64px 0px 0px;
     gap: 16px;
-    
-    width: 1136px;
+    width: auto;
     height: 660px;
     flex: none;
     order: 0;
@@ -580,7 +524,7 @@ section.formcontato{
 }
 
 .formcontato--esquerda img{
-    width: 464px;
+    width: 496px;
     height: 593px;
 }
 
@@ -612,9 +556,8 @@ section.formcontato{
 }
 
 .formcontato__text h3{
-    width: 656px;
+    /* width: 656px; */
     margin: 0;
-    
     font-weight: 500;
     font-size: 16px;
     line-height: 19px
@@ -671,8 +614,7 @@ textarea{
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    
-    width: 165px;
+    width: 172px;
     height: 51px;
    
     /* Azul/100% */
@@ -702,9 +644,8 @@ section.footer{
     align-items: center;
     padding: 32px;
     gap: 10px;
-    
-    width: 177%;
-    height: 102px;
+    width: auto;
+    height: auto;
     
     /* Preto/branco */
     background: #FFFFFF;
@@ -717,11 +658,11 @@ section.footer{
 
 .footer__rodape{
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.3em;
+    /* line-height: 19px; */
     text-align: center;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    /* flex: none; */
+    /* order: 0; */
+    /* flex-grow: 0; */
 }
 
