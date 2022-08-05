@@ -219,7 +219,7 @@ utilize como referência os breakpoints @media abaixo*/
         align-self: baseline;
     }
     .experience__img {
-        width: 80%;
+        width: 74%;
     }
 
      /*Contato*/
@@ -236,7 +236,7 @@ utilize como referência os breakpoints @media abaixo*/
      }
 
      .formcontato__text h2, h3 {
-        width: 379px;
+        width: calc(50%);
      }
 
      input, textarea{
