@@ -43,6 +43,7 @@ button[disabled=disabled], button:disabled {
 
 button:hover{
     transform: scale(1.1);
+    border-radius: 16px;
 }
 
 
@@ -594,6 +595,9 @@ input, textarea{
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    outline: none;
+    transition: all 0.5s;
+    padding: 5px;
 }
 
 textarea{
@@ -601,6 +605,9 @@ textarea{
     font-family: 'Raleway';
     font-style: normal;
     background: #FFFFFF;
+}
+input:focus, textarea:focus{
+    border-radius: 16px;
 }
 
 .formcontato__botao{
@@ -616,7 +623,7 @@ textarea{
     color: #FFFFFF;
     width: 172px;
     height: 51px;
-   
+       
     /* Azul/100% */
     background: #2A7AE4;
     

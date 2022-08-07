@@ -264,14 +264,17 @@
                     <h2 class="formcontato__title">Contato</h2>
                     <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
                     <h3 class="formcontato__subtext">Preencha o formulário abaixo e entrarei em contato o mais rápido possível. </h3>
-                    <form class="formcontato__form" name="portifolio" target="_blank" action="domingosvanjo@gmail.com" method="post" enctype=" application/x-www-form-urlencoded">
+                    <form class="formcontato__form" name="portfolio" action="https://api.staticforms.xyz/submit" method="post">
                         <ul id="formcontato__validate" class="invisivel">
                         </ul>
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" required="">
-                        <input class="formcontato__input" type="email" id="email" placeholder="E-mail" required="">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required="">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required=""></textarea>
+                        <input type="hidden" name="accessKey" value="775591f7-fbc2-4898-9dd0-5b8b882a501f">
+                        <input class="formcontato__input" type="text" name="name" id="nome" placeholder="Nome" required="">
+                        <input class="formcontato__input" type="email" name="email" id="email" placeholder="E-mail" required="">
+                        <input class="formcontato__input" type="text" name="subject" id="assunto" placeholder="Assunto" required="">
+                        <textarea class="formcontato__textarea" rows="5" cols="40" name="message" id="mensagem" placeholder="Sua mensagem" required=""></textarea>
+                        <input type="hidden" name="redirectTo" value="obrigado.html">
                         <button type="submit" class="formcontato__botao">Enviar mensagem</button>
+                        
                         
                     </form>
                 </div>

@@ -31,8 +31,8 @@ enviar.addEventListener('click', function(event){
         ul.classList.add('invisivel');
         ul.innerHTML= "";
     }
-    //form.submit();
-    alert('Sua mensagem foi enviada. Assim que puder entrarei em contato com você.')
+    form.submit();
+    //alert('Sua mensagem foi enviada. Assim que puder entrarei em contato com você.')
     form.reset();
 })
 
