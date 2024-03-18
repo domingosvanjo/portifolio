@@ -73,6 +73,12 @@ section.menu{
     height: 88px;
 }
 
+.menu_container{
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+}
+
 header{
     display: flex;
     height: 40px;
@@ -94,8 +100,9 @@ header img{
 
 nav{
     display: flex;
-    width: 925px;
+    width: auto;
     justify-content: flex-end;
+    margin: 0 auto;
 }
 
 .menu__list{
@@ -127,6 +134,7 @@ section.title{
 
 .title__div{
     width: auto;
+    margin: 0 auto;
 }
 
 .title__profile{
