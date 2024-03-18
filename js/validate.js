@@ -6,6 +6,19 @@ var msg = document.querySelector("#mensagem");
 var enviar = document.querySelector('.formcontato__botao');
 var expressao = new RegExp("^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+", "i");
 
+let idade = document.querySelector(".idade");
+const data = new Date();
+let ano  = data.getFullYear();
+let mes = data.getMonth();
+let dia = data.getDay();
+let anoP = document.querySelector(".ano");
+anoP.textContent = ano;  //ano no rodapé
+
+idade.textContent = CalcAnoNasc(ano, mes, dia);
+ano
+mes
+dia
+
 enviar.disabled = true;
 
 document.body.addEventListener('keydown', function(){
@@ -73,3 +86,15 @@ function exibeMensagensDeErro(erros){
         ul.appendChild(li);
     });
 }
+
+function CalcAnoNasc(ano, mes, dia){
+    if (mes >= 7){
+        if (dia >= 21){
+            return ano - 1977;
+        }
+    }else{
+        ano = ano - 1;
+        return ano - 1977;
+    }
+}
+
