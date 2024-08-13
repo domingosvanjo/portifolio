@@ -7,17 +7,14 @@ var enviar = document.querySelector('.formcontato__botao');
 var expressao = new RegExp("^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+", "i");
 
 let idade = document.querySelector(".idade");
-const data = new Date();
+let data = new Date();
 let ano  = data.getFullYear();
-let mes = data.getMonth();
-let dia = data.getDay();
+let mes = data.getMonth() + 1;
+let dia = data.getDate();
 let anoP = document.querySelector(".ano");
 anoP.textContent = ano;  //ano no rodapé
 
 idade.textContent = CalcAnoNasc(ano, mes, dia);
-ano
-mes
-dia
 
 enviar.disabled = true;
 
@@ -88,13 +85,11 @@ function exibeMensagensDeErro(erros){
 }
 
 function CalcAnoNasc(ano, mes, dia){
-    if (mes >= 7){
-        if (dia >= 21){
-            return ano - 1977;
-        }
-    }else{
-        ano = ano - 1;
+    
+    if (mes >= 8 && dia >= 21){
         return ano - 1977;
     }
+    ano = ano - 1;
+    return ano - 1977;
 }
 
