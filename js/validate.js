@@ -86,10 +86,9 @@ function exibeMensagensDeErro(erros){
 
 function CalcAnoNasc(ano, mes, dia){
     
-    if (mes >= 8 && dia >= 21){
-        return ano - 1977;
+    if (mes < 8 && dia < 21){
+        ano = ano - 1;
     }
-    ano = ano - 1;
     return ano - 1977;
 }
 

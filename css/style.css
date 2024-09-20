@@ -138,8 +138,8 @@ section.title{
 }
 
 .title__profile{
-    width: 27%;
-    height: 100%;
+    width: 25%;
+    height: 90%;
     border-radius: 50%;
     float: right;
 }
@@ -178,6 +178,10 @@ section.title{
 .title__network__item{
     display: inline;
     margin-right: 1rem;
+}
+
+.title__network__item a:hover{
+    color: #2A7AE4;
 }
 /*Sessão About*/
 
