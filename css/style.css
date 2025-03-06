@@ -1,29 +1,70 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+:root, :root[data-theme='dark'] {
+    --primary-color: #F0F0F0;
+  
+    --primary-bg-color: #111217;
+    --secondary-bg-color: #28292E;
+    --primary-border-color: #28292E;
+    --secondary-border-color: #56575A;
+  
+    --button-color: #2A7AE4;
+    --button-bg-color: #cdddf3;
+    --button-color-hover: #000000;
+    --title-color: #ffffff;
+    --text-color: #9A9A9C;
+    --link-color: #9A9A9C;
+    --icon-color: #C7C8C9;
+    --menu--hover: #ff8c00;
+  }
+  
+  :root[data-theme='light'] {
+    --primary-color: #0B0B0F;
+  
+      --primary-bg-color: #E9E9E9;
+      --secondary-bg-color: #C7C8C9;
+      --primary-border-color: #C7C8C9;
+      --secondary-border-color: #9A9A9C;
+  
+      --button-color: #2A7AE4;
+      --button-bg-color: #6ca9f8;
+      --button-color-hover: #000000;
+      --title-color: #0B0B0F;
+      --text-color: #28292E;
+      --link-color: #28292E;
+      --icon-color: #56575A;
+      --menu--hover: #ffa500;
+  }
 
+html[data-theme='light'] .brand__logo {
+    filter: invert(1);
+}
+  
+html[data-theme='light'] .technologies__logo {
+    filter: invert(80%);
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
+    /* box-sizing: border-box; */
+    background-color: var(--primary-bg-color) ;
+    font-family: "Raleway", serif;
     margin: 0;
     padding: 0;
     line-height: 1;
+    width: min-content;
+    width: 100%;
+}
+
+.all{
+    width: 90%;
+    margin-left: 5%;
 }
 ol, ul,li {
     list-style: none;
 }
 a{
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: var(--link-color);
 }
 
 button{
@@ -36,21 +77,20 @@ button:active{
 }
 
 button[disabled=disabled], button:disabled {
-    background-color: gray;
-	border-color: darkgray;
+    background-color: var(--primary-border-color);
+	border-color: var(--secondary-border-color);
     cursor: auto;
 }
 
 button:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     border-radius: 16px;
+    background-color: var(--button-bg-color);
+    color: var(--button-color-hover);
 }
 
 
-/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
-de utiliza-la. 
-
-Mas o que é o BEM?
+/*O que é o BEM?
 
 BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
 web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
@@ -62,107 +102,85 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{   
+.menu{   
     display: flex;
-    float: none;
-    margin: 0;
-    margin: 0 auto;
+    /* margin: 0 auto 0 5%; */
     align-items: center;
-   
-    width: auto;
-    height: 88px;
+    background-color: var(--primary-bg-color);
+    height: 4.5rem;
+    
 }
 
 .menu_container{
     display: flex;
-    width: auto;
-    margin: 0 auto;
-}
-
-header{
-    display: flex;
-    height: 40px;
     align-items: center;
-    
-}
-
-header img{
-    height: 30px;
-   
-}
-
-.menu__title{
-    width: 150px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    position: fixed;
+    top: 0;
+    width: 85.5%;
+    background-color: var(--primary-bg-color);
+    z-index: 1000; /*Para garantir que o cabeçalho fique acima de outros elementos */
 }
 
 nav{
-    display: flex;
-    width: auto;
-    justify-content: flex-end;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    width: 100%;
 }
 
 .menu__list{
     display: flex;
+    justify-content: space-between;
 }
 
 .menu__list__item{
-    margin: 0 0 0 15px;
+    /* margin: 0 0 0 2rem; */
+    color: var(--text-color);
+    font-size: 2.0vw;
 }
 
 .menu__list__item a:hover{
-    color: darkorange;
+    color: var(--menu--hover);
 }
 
 .menu__list__item:nth-child(6){
     font-weight: bold;
 }
 
+h1, h2, h3, h4, p{
+    color: var(--title-color);
+}
+
 /*Sessão Title*/
 
 section.title{
     display: flex;
-    float: none;
-    margin: 0;
-    margin: 0 auto;
-    width: auto;
-    margin-bottom: 2rem;
+    /* margin: 0 auto 0 5%; */
 }
 
 .title__div{
-    width: auto;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .title__profile{
-    width: 25%;
-    height: 90%;
+    width: 14.81rem;
+    height: 14.81rem;
     border-radius: 50%;
     float: right;
-}
-
-.title__profile:hover{
-    transform: scale(1.2)
 }
 
 .title__container{
     width: auto;
 }
 
-.title__container h2{
+.title__bio{
     font-size: 2.6em;
 }
 
 .title__subsection{
-    width: 751px;
-    font-family: 'Raleway';
+    width: 46.94rem;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 1.37rem;
+    line-height: 1.62rem;
     text-align: justify;
 }
 
@@ -170,9 +188,9 @@ section.title{
     display: flex;
     justify-content: space-between;
     padding: 0%;
-    width: 540px;
-    height: 24px;
-    padding-top: 10px;
+    width: 33.75rem;
+    height: 1.5rem;
+    padding-top: 0.62rem;
 }
 
 .title__network__item{
@@ -181,20 +199,17 @@ section.title{
 }
 
 .title__network__item a:hover{
-    color: #2A7AE4;
+    color: var(--menu--hover);
 }
 /*Sessão About*/
 
 section.about{
     display: flex;
     float: none;
-    margin: 0;
-    margin: 0 auto;
-    background: #EAF2FD;
+    /* margin: 0 auto 0 5%; */
+    background: var(--secondary-bg-color);
     flex-direction: column;
-    padding: 64px;
-    gap: 10px;
-    width: 100%;
+    padding: 2.75rem;
     height: auto;
     align-self: stretch;
     flex-grow: 0;
@@ -208,16 +223,15 @@ section.about{
 
 .about__title{
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .about__paragraph{
-    width: 751px;
     height: auto;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 19px;
+    font-size: 1.12rem;
+    line-height: 1.19rem;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -228,35 +242,29 @@ section.about{
 
 section.skills, section.hobbies{
     display: flex;
-    float: none;
-    margin: 0;
-    margin: 0 auto;
+    /* float: none; */
+    /* margin: 0 auto 0 5%; */
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-    width: auto;
-    height: auto;
-    margin-bottom: 2rem;
+     /* margin-bottom: 2rem; */
 }
 
 .skills__title, .hobbies__title{
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    line-height: 2.37rem;
 }
 
 .skills__line, .hobbies__line{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    width: auto;
-    height: 174px;
+    gap: 1rem;
+    /* width: auto; */
     flex-wrap: wrap;
-    flex: none;
+    /* flex: none; */
     order: 1;
-    align-self: auto;
+    justify-content: space-between;
     flex-grow: 0;
 }
 
@@ -267,10 +275,10 @@ section.skills, section.hobbies{
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 16px;
-    gap: 8px;
-    width: 146px;
-    height: 151px;
+    padding: 1rem;
+    gap: 0.5rem;
+    width: 9.12rem;
+    height: 9.44rem;
 }
 
 .skills__box:hover{
@@ -283,7 +291,6 @@ section.skills, section.hobbies{
 
 /*Sessão Hobbies*/
 
-
 .hobbies__box:hover{
     transform: scale(1.1);
 }
@@ -295,34 +302,29 @@ section.skills, section.hobbies{
 /* Experiência Acadêmica*/
 section.academic{
     display: flex;
-    float: none;
-    margin: 0;
-    margin: 0 auto;
+    /* float: none; */
+    /* margin: 0 auto 0 5%; */
     flex-direction: column;
     align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    width: auto;
+    padding: 5%;
     height: auto;
-    background: #EAF2FD;
-    flex: none;
+    background: var(--secondary-bg-color);
     align-self: stretch;
     flex-grow: 0;
 }
 
 .academic__title{
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    line-height: 2.37rem;
 }
 
 .academic__courses{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    flex: none;
+    justify-content: space-between;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
@@ -336,10 +338,10 @@ section.academic{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px;
-    gap: 10px;
-    width: 242px;
-    height: 242px;
+    padding: 1rem;
+    gap: 0.62rem;
+    width: 15.12rem;
+    height: 15.12rem;
 }
 .academic__courses__item__img:hover{
     transform: scale(1.1);
@@ -363,61 +365,62 @@ section.academic{
 .academic__courses__item__title{
     font-weight: 700;
     font-size: 1.3em;
-    line-height: 26px;
+    line-height: 1.62rem;
 }
 
 .academic__courses__item__subtitle{
     font-weight: 500;
     font-size: 1.2rem;
-    line-height: 19px;
-    color: #464646
+    line-height: 1.19rem;
+    /* color: #464646; */
 }
   
 /* experiência*/
 section.experience{
     display: flex;
     float: none;
-    margin: 0 auto;
+    /* margin: 0 auto 0 5%; */
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-    gap: 32px;
-    width: auto;
-    height: auto;
-    flex: none;
+    gap: 2rem;
+    
 }
 
 .experience__section__title{
     width: auto;
     /* height: 38px; */
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    line-height: 2.37rem;
     text-align: center;
 }
 
 .experiencie__box{
     display: flex;
-    flex: none;
+    /* flex: none; */
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    gap: 16px;
+    gap: 1rem;
     width: auto;
     height: auto;
 }
 
+.experience__forca{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
 
 .experience__img{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px;
-    gap: 10px;
-    width: 90%;
+    /* padding: 0.62rem; */
+    /* gap: 0.62rem; */
+    width: 70%;
     height: 38%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    border-radius: 20px;
 }
 
 .experience__img:hover{
@@ -425,136 +428,110 @@ section.experience{
     opacity: 1.5;
 }
 
-#forca__info{
-   padding: 10px;
-   margin: 0 4% 0 -94%;
-}
-
 #img__forca{
-  width: 50%;
-  margin-left: 34%;
+  width: 64%;
+  /* margin-left: 34%; */
   
 }
 
 .experience__title{
     font-weight: 700;
     font-size: 1.2rem;
-    line-height: 26px;
-    color: #464646;
-    width: 448px;
-    height: 26px;
+    line-height: 1.62rem;
 }
 
 .experience__text{
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.19rem;
     /* width: 348px; */
-    height: 19px;
-    color: #464646;
+    color: var(--text-color);
 }
 
 .experience__description{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    /* width: 560px; */
-    height: 51px;
+    gap: 1rem;
+    height: 3.19rem;
 }
 
 .experiencia__botao--repo{
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 16px;
-    gap: 10px;
+    padding: 1rem;
+    gap: 0.62rem;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #2A7AE4;
-    width: 116px;
-    height: 51px;
+    font-size: 1rem;
+    line-height: 1.19rem;
+    color: var(--button-color);
+    width: 7.30rem;
+    height: 4rem;
 
     /* Azul/100% */
-    border: 1px solid #2A7AE4;
-    border-radius: 15%;
+    border: 1px solid var(--button-color);
+    border-radius: 16%;
 }
 
 .experiencia__botao--demo{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 16px;
-    gap: 10px;
-    border-radius: 15%;
-    width: 105px;
-    height: 51px;
+    padding: 1rem;
+    gap: 0.62rem;
+    border-radius: 16%;
+    width: 7.30rem;
+    height: 4rem;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.19rem;
 
     /* Preto/branco */
-    color: #FFFFFF;
+    color: var(--title-color);
 
     /* Azul/100% */
 
-    background: #2A7AE4;
+    background: var(--button-color);
 }
 
 /*Contato*/
 
 section.formcontato{
     display: flex;
-    float: none;
-    flex: none;
     flex-direction: column;
     align-items: center;
-    padding: 64px;
-    gap: 10px;
-    order: 0;
+    /* margin: 0 auto 0 5%; */
+    padding: 3% 1% 3% 1%;
+    
+    gap: 0.62rem;
     flex-grow: 0;
-    width: auto;
-    height: auto;
     
     /* Azul/10% */
-    background: #EAF2FD;
+    background: var(--secondary-bg-color)
 }
 
 .formcontato__contacto{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 64px 0px 0px;
-    gap: 16px;
-    width: auto;
-    height: 660px;
-    flex: none;
+    width: 100%;
+    gap: 1rem;
     order: 0;
     flex-grow: 0;
 }
 
+
 .formcontato--esquerda img{
-    width: 496px;
-    height: 593px;
+    height: 50%;
 }
 
 .formcontato__text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    
-    width: 656px;
-    height: 596px;
     
     /* Inside auto layout */
     
-    flex: none;
     order: 1;
     flex-grow: 1;
 }
@@ -562,8 +539,8 @@ section.formcontato{
 .formcontato__text h2{
     margin: 0;
     margin-bottom: 3%;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    line-height: 2.37rem;
 }
 
 #nome{
@@ -574,22 +551,17 @@ section.formcontato{
     /* width: 656px; */
     margin: 0;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px
+    font-size: 1rem;
+    line-height: 1.19rem
 }
 
 .formcontato__form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 25px;
-    
-    width: 656px;
-    height: 397px;
-    
+    gap: 3vh;
+
     /* Inside auto layout */
-    
     flex: none;
     order: 1;
     align-self: stretch;
@@ -597,31 +569,31 @@ section.formcontato{
 }
 
 input, textarea{
-    width: 656px;
-    height: 56px;
+    width: auto;
+    height: 6vh;
     align-items: center;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    background: #FFFFFF;
-    border-radius: 4px;
-    flex: none;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    background: var(--icon-color);
+    /* flex: none; */
     order: 0;
     align-self: stretch;
-    flex-grow: 0;
+    flex-grow: 1;
     outline: none;
     transition: all 0.5s;
-    padding: 5px;
+    padding: 0.31rem;
+    border-radius: 0.62rem;
 }
 
 textarea{
-    height: 133px;
-    font-family: 'Raleway';
+    height: 20vh;
+    font-family: 'Raleway', serif;
     font-style: normal;
-    background: #FFFFFF;
+    background: var(--icon-color);
 }
 input:focus, textarea:focus{
-    border-radius: 16px;
+    border-color: var(--button-color);
 }
 
 .formcontato__botao{
@@ -629,17 +601,17 @@ input:focus, textarea:focus{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px;
-    gap: 10px;
+    padding: 1rem;
+    gap: 0.62rem;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    width: 172px;
-    height: 51px;
-       
+    font-size: 1rem;
+    line-height: 1.19rem;
+    color: var(--title-color);
+    width: 100%;
+    height: 3.19rem;
+    border-radius: 10px;
     /* Azul/100% */
-    background: #2A7AE4;
+    background: var(--button-color);
     
     /* Inside auto layout */
     flex: none;
@@ -663,13 +635,12 @@ section.footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 32px;
-    gap: 10px;
-    width: auto;
-    height: auto;
+    padding: 1rem;
+    gap: 0.62rem;
+    width: 100%;
     
     /* Preto/branco */
-    background: #FFFFFF;
+    background: var(--primary-bg-color);
     
     /* Inside auto layout */
     flex: none;
@@ -679,12 +650,9 @@ section.footer{
 
 .footer__rodape{
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 2vw;
     /* line-height: 19px; */
     text-align: center;
-    /* flex: none; */
-    /* order: 0; */
-    /* flex-grow: 0; */
 }
 
 .idade, .ano{

@@ -3,46 +3,46 @@ utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
 @media screen and (max-width: 768px) {
-
+    
     /* Menu */
     section.menu{
-        width: auto;
+        width: 100%;
         justify-content: space-between;
-        margin-left: 1rem;
-        margin-right: 3rem;
+        /* margin-left: 1rem; */
+        /* margin-right: 3rem; */
     }
 
-    nav{
-        width: auto;
+    .all{
+        width: 100%;
+        margin-left: 0;
     }
 
     .menu__list__item:nth-child(1){
-        display: none;
+        /* display: none; */
       }
       .menu__list__item:nth-child(2){
-          display: none;
+          /* display: none; */
       }
       .menu__list__item:nth-child(3){
-          display: none;
+          /* display: none; */
       }
       .menu__list__item:nth-child(4){
-          display: none;
+          /* display: none; */
       }
       .menu__list__item:nth-child(5){
-          display: none;
+          /* display: none; */
       }
       
     
     /*title*/
-    section.title{
-        width: auto;
-        margin-left: 1rem;
-        margin-right: 1rem;
+    .title__div{
+        padding: 5%;
     }
    
     .title__profile{
-        width: 38%;
-        margin-left: 15px;
+        width: 30vw;
+        /* height: 17vh; */
+        /* margin-left: 15px; */
     }
 
     .title__container{
@@ -65,7 +65,7 @@ utilize como referência os breakpoints @media abaixo*/
 
     }
     .about__title{
-        font-size: 22px;
+        font-size: 1.37rem;
     }
     .about__container{
         width: auto;
@@ -75,7 +75,7 @@ utilize como referência os breakpoints @media abaixo*/
     }
     /*Skills e Hobbies*/ 
     .skills__title, .hobbies__title{
-        font-size: 22px;
+        font-size: 1.37rem;
     }
     .skills__line, .hobbies__line{
         height: auto;
@@ -84,12 +84,12 @@ utilize como referência os breakpoints @media abaixo*/
     }
     .skills__box, .hobbies__box{
         width: calc(27%);
-        height: 118px;
+        height: 7.37rem;
     }
    
     /*Experiências acadêmicas*/
     .academic__title{
-        font-size: 22px;
+        font-size: 1.37rem;
     }
     .academic__courses{
         height: auto;
@@ -121,7 +121,7 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     .experience__section__title{
-        font-size: 22px;
+        font-size: 1.37rem;
     }
 
     .experiencie__box{
@@ -137,12 +137,14 @@ utilize como referência os breakpoints @media abaixo*/
     }
     /*Form contato*/
     section.formcontato, .formcontato__contacto{
+        margin-top: 5%;
         padding: 0;
     }
 
     .formcontato--esquerda img{
         display: none;
     }
+
 }
     
     /*Mobile*/
@@ -166,9 +168,11 @@ utilize como referência os breakpoints @media abaixo*/
     .title__profile{
         width: 34%;
         height: 29%;
-        margin-left: 15px;
+        margin-left: 40%;
         float: none;
     }
+
+    
 
     .title__subsection {
         font-size: 18px;
@@ -228,15 +232,11 @@ utilize como referência os breakpoints @media abaixo*/
      }
 
      .formcontato__text h2{
-        font-size: 22px;
+        font-size: 1.37rem;
      }
 
      .formcontato__form{
         width: auto;
-     }
-
-     .formcontato__text h2, h3 {
-        width: calc(50%);
      }
 
      input, textarea{

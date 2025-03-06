@@ -1,52 +1,29 @@
-# Alura Challenge | Oracle One | Front-end | Portfólio
----
+## Domingos Vanjo
 
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/168887837-b6d26532-6782-48dc-92eb-e48bf6c57a15.png">
-</p>
+Atualmente estou aprendendo ainda mais sobre análise de dados e linguagens de programação. ️🤖📊
 
-###  Primeiros Passos:
----
-#### 🔹Marque esse projeto com uma ⭐
-#### 🔹Siga as orientações do que temos neste repositório 📚
-#### 🔹Visite a página do desafio clicando aqui! [Link do Challenge](https://www.alura.com.br/challenges/oracle-one-front-end/) 📃
+Sou formado em Análise de Sistemas e Letras. Conhecimento em qualidade de software, metodologias ágeis e frameworks. 🏭
 
+Meu profundo contato com a programação veio através da necessidade de automatizar tarefas diárias na área administrativa escolar, onde iniciei desenvolvendo sistemas em Access e automatizando planilias de Excel com macros. Depois desenvolvi um sistema para controle administrativo escolar em Visual Basic. Me formei em Análises de Sistemas pela PUC-GO, onde aprendi muito sobre qualidade de software e metologias de projeto. 🔬🔎📷
 
-### Analisando nosso repositório!
----
-### Este é o repositório base do nosso projeto, nele voce encontrará:
-#### 🔹index.html: Documento HTML finalizado que você pode utilizar em seu projeto. Fonte, CSS e JavaScript já linkado e todas as sessões comentadas. Sinta-se a vontade para executar o seu próprio HTML caso deseje;
-#### 🔹style.css: Documento de CSS com instruções de estilo e também algumas sugestões para seu desenvolvimento
-#### 🔹validacao.js: Documento vazio para que possa aplicar sua lógica de programação, trabalhando com a validação de formulário em JavaScript
-#### Ao clonar, ou realizar o download do projeto base, você tera essa apresentação:
+Estou sempre em busca de novos desafios relacionados à área de tecnologia, inovação, análise de dados e programação, onde quero aprender e crescer com a indústria. Sou uma pessoa proativa, que gosta de projetos de equipe e pronta para crescer através do aprendizado técnico, teórico e prático. 🎯
 
+## Conecte-se comigo
 
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/168888313-d031e9e1-1449-4b73-bd3c-3102223097f3.png">
-</p>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/domingosvanjo/)  [![Instagram](https://img.shields.io/badge/-Instagram-FFF?style=for-the-badge&logo=instagram)](https://www.instagram.com/vanjodom/) [![Gmail](https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red)](mailto:domingosvanjo@gmail.com) [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://domingosvanjo.github.io/portifolio/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/domingosvanjo)
 
+## Habilidades
 
-## Como incluir meu projeto com a "#" do desafio?
----
-1) Publique seu repositório no Github
-2) Publique seu projeto no GitHub Pages: [Como publicar meus projetos com Github Pages?](https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site) 
-3) Utilize o tópico **#challengeoneportifolio2**
-Va na aba esquerda do seu projeto e clique na engrenagem de configuração selecione o campo **topics** e insira a etiqueta **#**
+ <img src="https://www.kaptiva.ca/wp-content/uploads/2019/06/formation-excel.png" alt="Excel" title="Excel" height="30" width="35"/>  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" title="Java" height="35" width="40"/> <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png" height="30" width="30" alt="JavaScript" title="JavaScript"> <img src="https://cdn.icon-icons.com/icons2/2415/PNG/96/html_plain_wordmark_logo_icon_146476.png" height="30" width="30" alt="Html5" title="Html5" > <img src="https://cdn.icon-icons.com/icons2/2415/PNG/96/css_original_wordmark_logo_icon_146576.png" height="30" width="30" alt="CSS3" title="CSS3"> <img src="https://www.gstatic.com/analytics-lego/svg/ic_looker_studio.svg" height="30" width="30" alt="Looker DataStudio" title="Looker DataStudio"> <img src="https://cdn.icon-icons.com/icons2/2530/PNG/96/dart_button_icon_151933.png" height="30" width="80" alt="Dart/Fluter" title="Dart/Fluter">
 
+## Ferramentas
 
-![gif-vitrine](https://user-images.githubusercontent.com/91544872/153601047-62aee6cb-e3cf-42b3-92c3-7130c996113f.gif)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) 	![Git](https://img.shields.io/badge/GIT-100000?style=for-the-badge&logo=git&logoColor=yellow) 	![Vscode](https://img.shields.io/badge/Vscode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-696969?style=for-the-badge&logo=figma&logoColor=figma)
 
-## Como faço a entrega final do meu Projeto?
----
+## GitHub Stats
 
-4) Preencha o formulário a seguir com seus dados pessoais, juntamente com o link do seu repositório e do seu GitHub Pages.
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=domingosvanjo&theme=transparent&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF&hide_title=true&hide=stars)
 
-🔹 [Link para o formulário](https://lp.alura.com.br/alura-latam-lp-entrega-de-challenge-one)
-![formulario-entrega](https://user-images.githubusercontent.com/91544872/153610784-525ff005-d667-43f1-adcc-155b5274d87b.png)
+## Linguagens mais utilizadas
 
-5) Vá para seu e-mail e resgate sua badge conquistada por encerrar mais um desafio no Projeto ONE! 🏆
-6) Não se esqueça de colocar um link ou vídeo de seu projeto no Linkedin! Marque com a #Oracle #AluraLatam 🏁
-
-
- <a href="https://www.linkedin.com/company/alura-latam/mycompany/" target="_blank">
-<img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=domingosvanjo&bg_color=000&border_color=30A3DC&title_color=E94D5F&text_color=FFF&hide_title=true)

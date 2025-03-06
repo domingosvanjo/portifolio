@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8K2QTV4QJ8"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -27,54 +28,49 @@
     
     <title>Portfólio Pessoal</title>
     <link rel="icon" href="assets/portfolio_icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- Sessão de Menu  -->
-    <div class="all">
+<!-- Sessão de Menu  -->
+<div class="all">
     <section class="menu">
-        <div class="menu_container">
-            <header>
-                <img src="assets\vector.png">
-                <h3 class="menu__title">Domingos Vanjo</h3>
-            </header>
+        <header class="menu_container">
             <nav>
                 <ul class="menu__list">
                     <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
                     <li class="menu__list__item"><a href="#skills">Skills</a></li>
                     <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacao">Formações e Cursos</a></li>
+                    <li class="menu__list__item"><a href="#formacao">Formação</a></li>
                     <li class="menu__list__item"><a href="#xp">Experiência</a></li>
                     <li class="menu__list__item"><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-        </div>
+        </header>
     </section>
 
-<!-- Sessão de Header/Title/Hero -->
+<!-- Sessão Title -->
     <section class="title">
         <div class="title__div">
             <img class="title__profile" src="assets\perfil.jpg">
-            <div class="title__container" id="#sobremim">
+            <div class="title__container">
                 <h2 class="title__bio">Olá, meu nome é Domingos Vanjo e construo páginas web.</h2>
-                <h3 class="title__subsection">Eu sou brasileiro, tenho <div class="idade"></div> anos, formado em Análise e desenvolvimento de sistemas pela PUC-GO e Letras Português-Inglês pela UEMA-MA. Participei do projeto Oracle ONE na Alura.</h3>
+                <h3 class="title__subsection">Eu sou brasileiro, tenho <div class="idade"></div> anos, formado em Análise e desenvolvimento de sistemas pela PUC-GO e Letras Português-Inglês pela UEMA-MA.</h3>
                 <ul class="title__network">
                     <li class="title__network__item"><a href="https://github.com/domingosvanjo" target="_blank">Github <img src="assets\arrow.png"> </a></li>
                     <li class="title__network__item"><a href="https://www.linkedin.com/in/domingosvanjo/" target="_blank">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.instagram.com/domingosvanjo/" target="_blank">Instagram <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://www.instagram.com/vandom/" target="_blank">Instagram <img src="assets\arrow.png"></a></li>
                     <li class="title__network__item"><a href="assets/CURRICULUM VITAE.pdf" target="_blank">Curriculo <img src="assets\arrow.png"></a></li>
                 </ul>
             </div>
         </div>
     </section>
 
-        <!-- Sessão sobre mim -->
-    <section class="about">
+    <!-- Sessão sobre mim -->
+    <section class="about" id="sobremim">
         <div class="about__container">
             <h3 class="about__title">Sobre mim</h3>
             <p class="about__paragraph">Gosto de tecnologia desde que tive o meu primeiro contato com computador em 97, infelizmente só pude me aprofundar em programação há pouco tempo. Aprendi muita coisa sozinho estudando em casa. No trabalho desenvolvi um sistema para controle de documentação escolar (colocarei um link em breve), desenvovi (e desenvolvo) também muitas macros para automatizar planilhas de Excel para agilizar meu trabalho como admistrativo nas empresas em que já trabalhei. </p>
             <p class="about__paragraph">Sou autodidata em Visual Basic e VBA. Já tive contato com a linguagem Delphi. Na PUC aprendi um pouco da linguagem Java, SQL, banco de dados, Dart/Fluter. Na Alura me aprofundei mais em html, CSS e JavaScript.</p>
-            
-            <img src="">
         </div>
     </section>
 
@@ -233,14 +229,13 @@
                 <h2 class="experience__title">Decodificador de texto</h2>
                 <h3 class="experience__text">Challenge Alura Codificador </h3>
                     <div class="experience__description">
-                        <!-- link para demonstração do projeto no Github e GithubPages -->
                             <span class="experience__repo"><a href="https://github.com/domingosvanjo/decodificador" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
                             <span class="experience__demo"><a href="https://domingosvanjo.github.io/decodificador/" target="_blank"><button class="experiencia__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>  
 
-        <div class="experiencie__box">
+        <div class="experiencie__box experience__forca">
             <a href="https://domingosvanjo.github.io/jogodaforca/" target="_blank"><img class="experience__img" id="img__forca" src="assets/forca1.PNG"></a>
             <div class="experience__info" id="forca__info">
                 <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
@@ -251,35 +246,19 @@
                     </div>
             </div>
         </div>  
-<!--
-        <div class="experiencie__box" id="proj3">
-            <!-- Insira a logo de seu projeto/trabalho 
-            <img class="experience__img" src="">
-            <div class="experience__info">
-                <h2 class="experience__title">Decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
+
+        <div class="experiencie__box experience__secreto">
+            <a href="https://domingosvanjo.github.io/jogo-amigo-secreto/" target="_blank"><img class="experience__img" id="img__secreto" src="assets/tela.png"></a>
+            <div class="experience__info" id="secreto__info">
+                <h2 class="experience__title">Jogo do amigo secreto</h2>
+                <h3 class="experience__text">Challenge Oracle/Alura</h3>
                     <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages 
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/domingosvanjo/jogo-amigo-secreto.git" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://domingosvanjo.github.io/jogo-amigo-secreto/" target="_blank" ><button class="experiencia__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>  
 
-        <div class="experiencie__box" id="proj4">
-            <!-- Insira a logo de seu projeto/trabalho --
-            <img class="experience__img" src="">
-            <div class="experience__info">
-            <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages 
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
-        </div>
-        </div>  
-    -->
     </section>
         <!-- Sessão de Contato -->
         <section class="formcontato">
@@ -289,8 +268,8 @@
                 </div>
                 <div class="formcontato__text">
                     <h2 class="formcontato__title">Contato</h2>
-                    <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                    <h3 class="formcontato__subtext">Preencha o formulário abaixo e entrarei em contato o mais rápido possível. </h3>
+                    <h3 class="formcontato__subtext">Entre em contato comigo.</h3>
+                    <h3 class="formcontato__subtext">Preencha o formulário abaixo e lhe responderei o mais rápido possível. </h3>
                     <form class="formcontato__form" name="portfolio" action="https://api.staticforms.xyz/submit" method="post">
                         <ul id="formcontato__validate" class="invisivel">
                         </ul>
@@ -301,8 +280,6 @@
                         <textarea class="formcontato__textarea" rows="5" cols="40" name="message" id="mensagem" placeholder="Sua mensagem" required=""></textarea>
                         <input type="hidden" name="redirectTo" value="https://domingosvanjo.github.io/portifolio/obrigado.html">
                         <button type="submit" class="formcontato__botao">Enviar mensagem</button>
-                        
-                        
                     </form>
                 </div>
             </div>
